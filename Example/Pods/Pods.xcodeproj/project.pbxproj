@@ -1290,7 +1290,32 @@
 			};
 			name = Release;
 		};
-		3A34C8DB59C12C0FAAC609D086ADB10A /* Debug */ = {
+		3DFC81ED4455A7EE0778D8F117F0C9BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226B2FD514FB71DDFA793F98FDB105F8 /* Analytics.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Segment;
+				PRODUCT_NAME = Analytics;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CA0C2F20A1033DB10E70A848B183B1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DDD2BB03CE82CDEF8786834669F8AA0 /* analytics-ios-mcvid.debug.xcconfig */;
 			buildSettings = {
@@ -1299,7 +1324,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/analytics-ios-mcvid/analytics-ios-mcvid-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1312,6 +1337,30 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		601725677083AD73D3AF0CA73492938C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E74AA195F78595AFCAED0363C792256 /* analytics-ios-mcvid.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/analytics-ios-mcvid/analytics-ios-mcvid-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = analytics_ios_mcvid;
+				PRODUCT_NAME = "analytics-ios-mcvid";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		6CA999B58AE1F8E689A13A39A16FECA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1556,33 +1605,9 @@
 			};
 			name = Debug;
 		};
-		C4D5A2E8CD9DEBCFF6620A3BFDF83860 /* Release */ = {
+		E079DDCD0152CC39640508DFE83C39DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E74AA195F78595AFCAED0363C792256 /* analytics-ios-mcvid.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/analytics-ios-mcvid/analytics-ios-mcvid-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = analytics_ios_mcvid;
-				PRODUCT_NAME = "analytics-ios-mcvid";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D3159B823F07906F6F072D8D5B480119 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 226B2FD514FB71DDFA793F98FDB105F8 /* Analytics.release.xcconfig */;
+			baseConfigurationReference = 3B851F04FFC6938EE24EACC3A649C532 /* Analytics.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1590,7 +1615,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1601,9 +1626,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		F4440A04FA711112BFE4E875457DF3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1628,30 +1652,6 @@
 			};
 			name = Debug;
 		};
-		FF0C4A3071B008545D4EFA3E082C2A8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B851F04FFC6938EE24EACC3A649C532 /* Analytics.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Segment;
-				PRODUCT_NAME = Analytics;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1667,8 +1667,8 @@
 		2DCBA2942C19FDDB1F1394E1231B519B /* Build configuration list for PBXNativeTarget "analytics-ios-mcvid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A34C8DB59C12C0FAAC609D086ADB10A /* Debug */,
-				C4D5A2E8CD9DEBCFF6620A3BFDF83860 /* Release */,
+				4CA0C2F20A1033DB10E70A848B183B1B /* Debug */,
+				601725677083AD73D3AF0CA73492938C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1703,8 +1703,8 @@
 		9B3EB0D5FAF7D032C9F5E23651C07323 /* Build configuration list for PBXNativeTarget "Analytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF0C4A3071B008545D4EFA3E082C2A8C /* Debug */,
-				D3159B823F07906F6F072D8D5B480119 /* Release */,
+				E079DDCD0152CC39640508DFE83C39DE /* Debug */,
+				3DFC81ED4455A7EE0778D8F117F0C9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
